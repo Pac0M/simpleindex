@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincón del Mod - Discord de SA-MP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            text-align: left;
+            padding-left: 20px;
+            color: #fff;
+        }
+
+        #banner {
+            background-image: url("banner.jpg");
+            background-size: cover;
+            color: #fff;
+            padding: 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #banner h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        #informacion {
+            background-color: #fff;
+            padding: 40px;
+            text-align: justify;
+            animation: fadeIn 1s ease-in;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #informacion h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #333;
+            animation: scaleIn 1s ease-in;
+        }
+
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0.9);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #informacion p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #555;
+            animation: slideIn 1s ease-in;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        #contactos {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        #contactos h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #contactos ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #contactos li {
+            font-size: 18px;
+            margin: 10px;
+            display: inline-block;
+            color: #555;
+        }
+
+        #discord-button {
+            display: block;
+            background-color: #7289DA;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+            margin: 40px auto;
+            width: fit-content;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #discord-button:hover {
+            background-color: #677BC4;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sound = new Howl({
+                src: ['https://dl.dropboxusercontent.com/s/w4j8sxtpu45k14y/WOS%20-%20DESCARTABLE%20%28Video%20Oficial%29.mp3'],
+                autoplay: true,
+                loop: true,
+                volume: 0.5
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Rincón del Mod</h1>
+    </header>
+
+    <section id="banner">
+        <div id="particles-js"></div>
+        <h2>Bienvenido al Rincón del Mod</h2>
+        <p>Discord de información de SA-MP donde ayudamos a la comunidad y proporcionamos información.</p>
+    </section>
+
+    <section id="informacion">
+        <h2>Información del Rincón del Mod</h2>
+        <p>Bienvenido al Rincón del Mod, un espacio dedicado a SA-MP (San Andreas Multiplayer).</p>
+        <p>Descubre una comunidad apasionada que comparte información, mods y brinda ayuda a los jugadores de SA-MP.</p>
+        <p>Sumérgete en una variedad de modos de juego emocionantes, como modo libre, deathmatch, carreras, roleplay, supervivencia y más.</p>
+        <p>Forma parte de clanes y facciones para colaborar y competir en el mundo de SA-MP.</p>
+        <p>Participa en eventos y competiciones regulares donde podrás demostrar tus habilidades.</p>
+        <p>Personaliza tu personaje, vehículos y otras opciones de juego según tus preferencias.</p>
+        <p>Únete a nuestro Discord para interactuar con jugadores, obtener ayuda y compartir recursos.</p>
+        <p>Explora un espacio activo y apasionado donde la diversión y la colaboración son fundamentales.</p>
+    </section>
+
+    <section id="contactos">
+        <h2>Contactos de Discord</h2>
+        <ul>
+            <li>Federal Fatso#1963</li>
+            <li>Omni-Man#3186</li>
+            <li>Pycelle#7746</li>
+        </ul>
+    </section>
+
+    <a href="https://discord.gg/rincon-del-mod-814018791955890176" id="discord-button">Únete a nuestro Discord</a>
+
+    <footer>
+        <p>&copy; 2023 Rincón del Mod & Pac0. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: "#ffffff"
+                },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: "img/github.svg",
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+
+</html>
